@@ -1,0 +1,408 @@
+/* 
+@media (min-width: 375px) {
+    // for xs devices - base on iphone se sa console
+}
+
+@media (min-width: 768px) {
+    // for md devices - base sa bootstrap 5 bp
+}
+
+@media (min-width: 992px) {
+    // for lg to xl devices - base sa bootstrap 5 bp
+}
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    padding: 2rem;
+}
+
+#landing-container {
+    height: 80vh;
+}
+
+#landing-row {
+    width: 100%;
+}
+
+
+#landing-img {
+    object-fit: cover;
+    width: 80%;
+}
+
+
+
+/* Tools & Logo Section */
+
+#tools-container, #tools{
+    background-color: #fdfdfd;
+}
+
+#subheading {
+    font-size: 2.5rem;
+}
+
+#tools-heading #subheading {
+    padding-bottom: 2rem;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.my-logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+  
+.my-logos:before,
+.my-logos:after {
+     position: absolute;
+     top: 0;
+     width: 250px;
+     height: 100%;
+     content: "";
+     z-index: 2;
+}
+  
+.my-logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+  
+.my-logos-slide {
+    display: inline-block;
+    animation: 32s slide infinite linear;
+    min-height: 150px;
+}
+  
+.my-logos-slide img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    margin: 0 40px;
+}
+
+#project-img {
+    object-fit: contain;
+}
+.border-this {
+    border: 1px solid #D3D3D3;
+}
+
+.hover-shrink {
+    transition: transform 0.5s ease;
+    filter: drop-shadow(7px 7px 5px #D3D3D3);
+}
+
+.hover-shrink:hover {
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
+}
+
+#pre-footer {
+    background-color: #f8f8f8;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+#connect a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+#ftr-btn {
+    align-self: end;
+}
+.form-control, .form-select {
+    margin-bottom: 1.2rem;
+}
+    #connect {
+    margin-top:2rem;
+    margin-bottom: 3rem;
+}
+    #connect h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+    #connect h4 {
+    text-align: center;
+ }
+ #form-holder h3 {
+     text-align: center;
+     font-weight: 400;
+}
+label {
+    font-weight: 500;
+}
+#roadmap {
+    color: slateblue;
+    font-weight: 500;
+    padding:7px;
+    border-radius: 5px;
+    border: 1px solid #c2c0c09f;
+    filter: drop-shadow(7px 7px 5px #D3D3D3);
+}
+
+
+/*  for iphone se size */
+@media (min-width: 360px) {
+    #nav-name {
+        font-size: 1.1rem;
+    }
+    #landing-heading {
+        padding-left: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    #landing-heading h1 {
+        font-size: 2.7rem;
+    }
+    #landing-heading h2 {
+        font-size: 1.8rem;
+    }
+    #tools {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    #tools-heading {
+        margin-top: 4rem;
+        padding-top: 2rem;
+    }
+    #tools-heading #subheading {
+        font-size: 1.5rem;
+    }
+    #tools-heading #block-this {
+        display: block;
+    }
+    #subheading {
+        font-size: 1.6rem;
+    }
+    .my-logos::before, .my-logos::after {
+        background: none;
+    }
+    .my-logos-slide img {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 70px;
+        margin: 0 5px;
+    }
+    #projects {
+        margin-top: 1rem;
+        padding-top: 1.2rem;
+    }
+    #design-process {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #process img {
+        margin-top: 1rem;
+        height: 80px;
+        width: 80px;
+    }
+    #process {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #design-process #subheading {
+        padding-bottom: 0.7rem;
+        padding-top: 2rem;
+    }
+    footer {
+        padding-top: 1rem;
+    }
+
+}  
+
+/* For medium devices */
+
+  @media (min-width: 768px) {
+    #landing-container {
+        height: auto;
+        padding-top: 2rem;
+    }
+    #landing-row h1 {   
+        font-size: 3.5rem;  
+    }
+    #landing-row h2 {
+        font-size: 2.3rem;
+    }
+    #tools {
+        padding-top: 1.5rem;
+        
+    }
+    #tools-heading #subheading {
+        font-size: 2.2rem;
+    }
+    #subheading {
+        font-size: 2.3rem;
+    }
+    .my-logos-slide img {
+        height: 100px;
+        margin: 0 25px;
+    }
+        #process {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #process img {
+        margin-top: 1rem;
+        height: 120px;
+        width: 120px;
+    }
+    #form-holder {
+        width: 550px;
+    }
+    #pre-footer{
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+    #connect h3 {
+        padding-top: 2rem;
+        font-size: 2.8rem;
+    }
+    #connect h4 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    #form-holder {
+        padding: 1rem 2rem;
+    }
+    #form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fdfdfd; */
+    }
+    #form-container h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    #ftr-btn {
+        padding:0.5rem 1.2rem;
+    }
+    label {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* For LG to XL Devices */
+
+@media (min-width: 992px) {
+    #nav-name {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .nav-item {
+        font-weight: 500;
+        font-size: 1.1rem;
+    }   
+
+    #landing-row h1 {   
+        font-size: 5.4rem;  
+    }
+    #landing-row h2 {
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+    #landing-row{
+        padding-left: 10rem;
+        padding-right: 0;
+    }
+    #tools-heading h2 {
+        font-weight: 500;
+        padding-top: 2rem;
+    }
+    .my-logos-slide img {
+        height: 130px;
+        margin: 0 40px;
+    }
+    .my-logos:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+    #projects {
+        margin-top: 2rem;
+        padding-top: 3rem;
+    }   
+    #projects #subheading {
+        padding-bottom: 2rem;
+    }
+      
+    .my-logos:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
+    #design-process {
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+    #design-process #subheading {
+        padding-bottom: 3rem;
+    }
+    #process img {
+        height: 120px;
+        width: 120px;
+    }
+    #pre-footer{
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+    #connect h3 {
+        font-size: 3.5rem;
+    }
+    #connect h4 {
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+    #form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fdfdfd; */
+    }
+    #form-container h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    #pre-footer{
+        padding-top: 4rem;
+    }
+}
+

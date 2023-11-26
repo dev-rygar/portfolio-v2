@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="index.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="home" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div id="nav-container" class="container-fluid mx-2">
+      <a id="nav-name" class="navbar-brand">JOHN GARRY TAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form-container">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <div id="landing-container" class="container-fluid d-flex justify-content-center">
+    <div id="landing-row" class="row">
+      <div id="landing-heading" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <div>
+          <h1>Front-End Engineer</h1>
+          <h2>| UX & UI Designer</h2>
+        </div>
+      </div>
+
+      <div id="landing-img-container" class="col-12 col-md-6 d-flex justify-content-center">
+        <img id="landing-img" type='button' src="images/profile-nt.png" class="image-fluid"
+          alt="image of the software engineer" data-bs-toggle="modal" data-bs-target="#myModal" />
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">About Me </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h6>Hello, I am John Garry Tan!</h6>
+              <p>An aspiring front-end developer and UX/UI designer, currently enriching my
+                skills through
+                dedicated study and hands-on practice.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools Slide Sections -->
+  <div id="tools-container">
+    <section id="tools-heading" class="text-center">
+      <h2 id="subheading">Programming <span id="block-this">& Design Essentials</span></h2>
+    </section>
+
+    <section id="tools" class="my-logos">
+      <div class="my-logos-slide">
+        <img src="images/tools/html.png" alt="" />
+        <img src="images/tools/css.png" alt="" />
+        <img src="images/tools/bootstrap.png" alt="" />
+        <img src="images/tools/tailwind.png" alt="" />
+        <img src="images/tools/uikit.png" alt="" />
+        <img src="images/tools/js.png" alt="" />
+        <img src="images/tools/py.png" alt="" />
+        <img src="images/tools/figma.png" alt="" />
+        <img src="images/tools/git.png" alt="" />
+        <img src="images/tools/github.png" alt="" />
+        <img src="images/tools/canva.png" alt="" />
+      </div>
+      <div class="my-logos-slide">
+        <img src="images/tools/html.png" alt="" />
+        <img src="images/tools/css.png" alt="" />
+        <img src="images/tools/bootstrap.png" alt="" />
+        <img src="images/tools/tailwind.png" alt="" />
+        <img src="images/tools/uikit.png" alt="" />
+        <img src="images/tools/js.png" alt="" />
+        <img src="images/tools/py.png" alt="" />
+        <img src="images/tools/figma.png" alt="" />
+        <img src="images/tools/git.png" alt="" />
+        <img src="images/tools/github.png" alt="" />
+        <img src="images/tools/canva.png" alt="" />
+      </div>
+    </section>
+  </div>
+
+  <!-- Project Section -->
+  <section id="projects" class="container text-center">
+    <h2 id="subheading">Latest Projects</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <a href="https://dev-rygar.github.io/design-sys/" target="_blank"><img id="project-img"
+            src="images/projects/project1.png" class="w-100 shadow-1-strong rounded mb-4 border-this hover-shrink"
+            alt="" /></a>
+        <a href="https://dev-rygar.github.io/Blog-Post/" target="_blank"><img id="project-img"
+            src="images/projects/project2a.png" class="w-100 shadow-1-strong rounded mb-4 border-this hover-shrink"
+            alt="" /></a>
+      </div>
+
+      <!-- Next two images -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <a href="https://www.figma.com/file/s0POc9jM6zZXp62X8qJU5V/Awtentik%2FOwtentik-App?type=design&node-id=320%3A1651&mode=design&t=NQMDYEtyduoUZd0g-1"
+          target="_blank"><img id="project-img" src="images/projects/project4.png"
+            class="w-100 shadow-1-strong rounded mb-4 border-this hover-shrink" alt="" /></a>
+        <a href="https://github.com/dev-rygar" target="_blank"><img id="project-img" src="images/projects/project6s.png"
+            class="w-100 shadow-1-strong rounded mb-4 border-this hover-shrink" alt="" /></a>
+      </div>
+    </div>
+    <!-- Gallery -->
+  </section>
+
+  <section id="design-process" class="container">
+    <div class="row">
+      <div id="dp-heading">
+        <h2 id="subheading" class="text-center">Key Process</h2>
+      </div>
+      <div id="process" class="d-flex justify-content-around">
+        <img src="images/design/d1.png" alt="">
+        <img src="images/design/d2.png" alt="">
+        <img src="images/design/d3.png" alt="">
+        <img src="images/design/d4.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="pre-footer" class="container-fluid">
+    <div class="row">
+      <section id="connect" class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+        <div id="connect-heading">
+          <h3>Stay in touch via</h3>
+          <h4><a href="">LinkedIn</a> | <a href="">Gmail</a></h4>
+        </div>
+      </section>
+
+      <section id="form-container" class="col-12 col-lg-6">
+        <div id="form-holder">
+          <h3>Let's work together!</h3>
+          <form action="">
+            <div class="">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                required>
+            </div>
+            <div class="">
+              <label for="" class="form-label">Subject</label>
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>Select subject</option>
+                <option value="1">Inquiry</option>
+                <option value="2">Project Proposal</option>
+                <option value="3">Collaboration Request</option>
+              </select>
+            </div>
+            <div class="">
+              <label for="exampleFormControlTextarea1" class="form-label">Message: (Optional)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="ftr-btn" type="button" class="btn btn-outline-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p><span id="roadmap" data-bs-toggle="modal" data-bs-target="#myModal2">Roadmap</span> | © 2023 All
+      Rights Reserved.
+    </p>
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Future Updates</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>- Additional Content as Full-Stack Engineer</p>
+            <p>- Section: Why Me?</p>
+            <p>- Documentation: thoughts behind this web design</p>
+            <p>- Will upload my wireframe(scracth and digital), information architecture and user flow.</p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
